@@ -1,0 +1,160 @@
+/* ==========================
+   General Styles
+   ========================== */
+   * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #f0f4f8, #d9e2ec);
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  /* ==========================
+     Navigation Bar
+     ========================== */
+  nav {
+    background-color: #1e293b;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #38bdf8;
+  }
+  
+  /* ==========================
+     Hero Section (Welcome Page)
+     ========================== */
+
+     .hero {
+        text-align: left; /* align text to left */
+        padding: 120px 20px; /* adjust padding as needed */
+        background: url('images/adithya.jpg.jpg') no-repeat right center;
+        background-size: 400px; /* adjust the image size as needed */
+        background-color: #1e293b; /* fallback background color */
+        color: white;
+      }
+      
+  .hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .hero-content img {
+    order: 2;
+    max-width: 300px; /* adjust as needed */
+  }
+
+  .hero-content .hero-text {
+    order: 1;
+    text-align: left;
+  }
+  
+  .hero-text h1 {
+    margin: 0 0 10px;
+    font-size: 2.5rem;
+  }
+  
+  .hero-text p {
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+  }
+  
+  .hero-text .btn {
+    background-color: #38bdf8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-text .btn:hover {
+    background-color: #3498db;
+  }
+  
+  /* ==========================
+     Container and Content Layout
+     ========================== */
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 20px;
+  }
+  
+  section {
+    background: white;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  section h2 {
+    margin-bottom: 15px;
+    color: #1e293b;
+  }
+  
+  .quick-links {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .card-grid {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .card {
+    background-color: #38bdf8;
+    color: white;
+    padding: 20px 40px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+  }
+  
+  .card:hover {
+    background-color: #3498db;
+  }
+  
+  @media (max-width: 600px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+  
+    nav {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .card-grid {
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
